@@ -1,4 +1,4 @@
 resource "local_file" "samplefile" {
-  filename = "/home/serverprotege/car.txt"
-  content = "The car Sentra is made from Nissan family"  
+  filename = "/home/serverprotege/newfile.txt"
+  content = "This is my first script created in terraform"  
 }
