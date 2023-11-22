@@ -16,7 +16,7 @@ resource "aws_instance" "Test-Server" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "FirstServerUsing Terraform"
+    Name = var.instance_name
   }
   
 }
