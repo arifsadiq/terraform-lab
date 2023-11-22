@@ -18,5 +18,9 @@ resource "aws_instance" "Test-Server" {
   tags = {
     Name = var.instance_name
   }
+
+  lifecycle {
+    create_before_destroy = true
+  }
   
 }
