@@ -1,7 +1,7 @@
 variable "instance_ami" {
   description = "Value of AMI used for the instance"
   type = string
-  default = [ "ami-0fc5d935ebf8bc3bc" ]
+  default = "ami-0fc5d935ebf8bc3bc"
 }
 
 variable "ec2_type" {
