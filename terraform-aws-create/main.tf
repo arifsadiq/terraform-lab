@@ -11,9 +11,9 @@ provider "aws" {
   region = "us-east-1"
   }
 
-resource "aws_instance" "Test-Server" {
-  ami = "ami-0fc5d935ebf8bc3bc"
-  instance_type = "t2.micro"
+resource "aws_instance" "Sever Protege" {
+  ami = var.instance_ami
+  instance_type = var.ec2_type
 
   tags = {
     Name = var.instance_name
